@@ -1,11 +1,10 @@
 import mongoose from "mongoose";
 
-const urlTest = process.env.MONGO_URL
-console.log(".env mongoUrl test:", urlTest);
+// const urlTest = process.env.MONGO_URL
+// console.log(".env mongoUrl test:", urlTest);
 
-//const mongourl = "mongodb+srv://shapiranatan:1q2w3e4r@cluster0.yfteoyc.mongodb.net/"
-const mongourl = "mongodb+srv://shapiranatan:1q2w3e4r@cluster0.yfteoyc.mongodb.net/booksDB?retryWrites=true&w=majority&appName=Cluster0"
-const MONGO_URL = process.env.MONGO_URL || mongourl
+
+const MONGO_URL = process.env.MONGO_URL as string
 //console.log(MONGO_URL);
 
 
